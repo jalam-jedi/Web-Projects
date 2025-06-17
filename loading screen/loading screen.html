@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .loading-screen {
+        max-width: 50%;
+        line-height: 1.4;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+      }
+      .loading-screen__auth {
+        color: gray;
+        display: block;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+      }
+      .loading-screen__anim {
+        width: 35px;
+        height: 35px;
+        border: 5px solid gray;
+        display: inline-block;
+        border-radius: 50%;
+        border-bottom-color: blue;
+        border-left-color: blue;
+        animation: rotate 600ms infinite linear;
+      }
+      @keyframes rotate {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="loading-screen">
+      Here are the loading loading screens you ordered
+      <span class="loading-screen__auth"> From your friends </span>
+      <span class="loading-screen__anim"> </span>
+    </section>
+  </body>
+</html>

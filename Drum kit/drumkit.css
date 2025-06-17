@@ -1,0 +1,55 @@
+html{
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    background-image: url('background.jpg');
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif
+}
+.drumkit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     flex: 1;
+    
+}
+.sound{
+    font-size: 1rem;
+}
+
+kbd{
+    display: block;
+    font-size: 2rem;
+}
+.sound {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.drumkit__button{
+    width: 50px;
+    height: 45px;
+    background: rgba(0,0 ,0 , 0.4);
+    border: 4px  solid  black ;
+    border-radius: .5rem;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    transition: all .07s ease;
+    color: rgb(255, 255, 255);
+    text-shadow:0 0 px black ;
+    font-size: 2rem;
+    padding: 1rem ;    
+}
+
+.playing{
+    scale: 1.1;
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
